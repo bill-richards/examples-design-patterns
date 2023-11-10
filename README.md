@@ -32,11 +32,12 @@ So *why*, I hear you ask, *is knowing how to implement these patterns not as imp
 
 Jump right in to the code or take a bit of time to read the accompanying documents that I have painstakingly taken the time to put together by way of describing what is laid out within this C# solution.
 
-- [Iterator Implementation and consumer](./IteratorImplementation/)
-- [.net Iterator consumer](./DotNetIterator/)
-- [Pattern matching iterator consumer](./PatternMatching/)
-- [Chain of Responsibility, Iterator, Decorator, Adapter](./Sorting/)
+- [Iterator Implementation and consumer](./IteratorImplementation/README.md)
+- [.net Iterator consumer](./DotNetIterator/README.md)
+- [Pattern matching iterator consumer](./PatternMatching/README.md)
+- [Chain of Responsibility, Iterator, Decorator, Adapter](./Sorting/README.md)
+- [Dependency Injection](./DependencyInjection/README.md)
 
 And just for the fun of it, I have also put together a means of both running all examples sequentially, and of obtaining some Benchmarks detailing both speed and Heap allocated memory.
 
-- [Benchmarks / Debug Runner](./Benchmarks/)
+- [Benchmarks / Debug Runner](./Benchmarks/README.md)

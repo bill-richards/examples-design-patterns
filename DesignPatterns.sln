@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarks", "Benchmarks\Benchmarks.csproj", "{671CF518-0ADF-4DA8-8CCF-F73AEB5F2AE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{671CF518-0ADF-4DA8-8CCF-F73AEB5F2AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{671CF518-0ADF-4DA8-8CCF-F73AEB5F2AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{671CF518-0ADF-4DA8-8CCF-F73AEB5F2AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
