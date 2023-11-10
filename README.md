@@ -1,3 +1,4 @@
+[solution](./)
 # Design Patterns in .Net 7.0
 
 ## A foreword
