@@ -22,7 +22,7 @@ Then there is the converse, where an individual knows the names of those pattern
 
 Knowing what a tool is does not *ipso facto* directly translate to understanding how to use it, or how to manufacture it. This is where understanding comes in to play. I posit that it is **extremely important** to ***understand*** design patterns, to fully appreciate what each "pattern" is, and what problems it solves, because that is the heart of the matter: ***what problem is this pattern a solution for?*** When the individual has gained this understanding she will see these patterns all around her, and she will see where they are applied correctly, or incorrectly, she will see where they are the missing solution and she will see where they are overkill (when implemented in full). A pattern is only a pattern because **it is a *known* solution to a *known* problem**.
 
-## Do you need to know how to implement Design Patterns? {#page}
+## Do you need to know how to implement Design Patterns?
 
 ontroversially, I am going to say *no, you do not necessarily need to know how to implement all of the documented design patterns* which currently reside within the public domain, especially so when using modern programming tools, languages, and Frameworks: for example .Net 7.0 
 
