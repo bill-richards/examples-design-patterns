@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>gsdc.examples.design_patterns.benchmarks</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BenchmarkDotNet" Version="0.13.10" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DotNetIterator\DotNetIterator.csproj" />
+	  <ProjectReference Include="..\IteratorImplementation\IteratorImplementation.csproj" />
+	  <ProjectReference Include="..\PatternMatching\PatternMatching.csproj" />
+	  <ProjectReference Include="..\Sorting\Sorting.csproj" />
+	</ItemGroup>
+
+
+</Project>
