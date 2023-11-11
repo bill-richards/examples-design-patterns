@@ -12,6 +12,9 @@ public class Benchmark
     public void DotNet_SingleMovie()
         => DotNetBenchmark.RunSingleMovieBenchmark();
 
+    [Benchmark] public void PatternMatching_SingleMovie()
+        => PatternMatchingBenchmark.RunSingleMovieBenchmark();
+
     [Benchmark] public void Implementation()
         => ImplementationBenchmark.RunBenchmark();
 

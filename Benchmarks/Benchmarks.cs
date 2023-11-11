@@ -34,6 +34,9 @@ internal class PatternMatchingBenchmark : pattern_matching.Example
     {
         foreach (var m in movies) _ = FormatMovie(m);
     }
+
+    public static void RunSingleMovieBenchmark()
+        => _ = FormatMovie(eraserHead);
 }
 
 internal class SortingBenchmark : sorting.Example
