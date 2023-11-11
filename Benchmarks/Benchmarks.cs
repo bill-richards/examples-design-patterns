@@ -1,6 +1,6 @@
 ﻿namespace gsdc.examples.design_patterns.benchmarks;
 
-internal class DotNet : dotnet_iterator.Example
+internal class DotNetBenchmark : dotnet_iterator.Example
 {
     public static void RunBenchmark()
     {
@@ -11,7 +11,7 @@ internal class DotNet : dotnet_iterator.Example
     }
 }
 
-internal class Implementation : iterator_implementation.Example
+internal class ImplementationBenchmark : iterator_implementation.Example
 {
     public static void RunBenchmark()
     {
@@ -22,7 +22,7 @@ internal class Implementation : iterator_implementation.Example
     }
 }
 
-internal class PatternMatching : pattern_matching.Example
+internal class PatternMatchingBenchmark : pattern_matching.Example
 {
     public static void RunBenchmark()
     {
@@ -30,7 +30,7 @@ internal class PatternMatching : pattern_matching.Example
     }
 }
 
-internal class Sorting : sorting.Example
+internal class SortingBenchmark : sorting.Example
 {
     public static void RunBenchmark()
     {

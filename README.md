@@ -50,4 +50,4 @@ These are all of the example projects
 - [Dependency Injection](./DependencyInjection/README.md)
 
 And just for the fun of it, I have also put together a means of obtaining some Benchmarks detailing both speed and Heap allocated memory.
-- [Benchmarks / Debug Runner](./Benchmarks/README.md)
+- [Benchmarks](./Benchmarks/README.md)

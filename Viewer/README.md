@@ -1,4 +1,4 @@
-[� back](../README.md#do-you-need-to-know-how-to-implement-design-patterns) | [solution](./)
+[« back](../README.md#do-you-need-to-know-how-to-implement-design-patterns) | [solution](./)
 # Examples Runner / Viewer
 
 Using this project you can run all or any individual example project. To run all do not specify and options, to run each example individually specify it as an option

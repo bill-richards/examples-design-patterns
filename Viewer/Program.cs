@@ -1,7 +1,7 @@
 ﻿
-if(args.Length > 0)
+if (args.Length > 0)
 {
-    foreach(var arg in args)
+    foreach (var arg in args)
     {
         switch (arg)
         {
@@ -47,4 +47,4 @@ gsdc.examples.design_patterns.iterator_implementation.Example.Run();
 gsdc.examples.design_patterns.dotnet_iterator.Example.Run();
 gsdc.examples.design_patterns.pattern_matching.Example.Run();
 gsdc.examples.design_patterns.sorting.Example.Run();
-Console.ReadKey();
+gsdc.examples.design_patterns.dependency_injection.Example.Run();

@@ -5,10 +5,13 @@ public class Example
 {
     protected record Movie(string Title, IIterator<string> Stars, uint Year);
 
-    protected static Movie whiteNoise = new Movie("White Noise", new Iterator<string>(Array.Empty<string>()), 2023);
-    protected static Movie dumbWaiter = new Movie("The Dumb Waiter", new Iterator<string>(new[] { "Geraldine Jones" }), 1979);
-    protected static Movie eraserHead = new Movie("Eraser Head", new Iterator<string>(new[] { "Jack Nance", "Charlotte Stewart", "Allen Joseph" }), 1977);
-    protected static Movie piTheMovie = new Movie("Pi", new Iterator<string>(new[] { "Sean Gullette", "Mark Margolis", "Ben Shenkman" }), 1998);
+    protected static Movie whiteNoise = new("White Noise", new Iterator<string>(Array.Empty<string>()), 2023);
+    protected static Movie dumbWaiter = new("The Dumb Waiter", new Iterator<string>(new[] { "Geraldine Jones" }), 1979);
+    protected static Movie eraserHead = new("Eraser Head", new Iterator<string>(new[] { "Jack Nance", "Charlotte Stewart", "Allen Joseph" }), 1977);
+    protected static Movie piTheMovie = new("Pi", new Iterator<string>(new[] { "Sean Gullette", "Mark Margolis", "Ben Shenkman" }), 1998);
+    protected static Movie dumbWaiter1 = new("The Dumb Waiter", new Iterator<string>(new[] { "Geraldine Jones", "John White" }), 1979);
+    protected static Movie dumbWaiter2 = new("The Dumb Waiter", new Iterator<string>(new[] { "Bobby Dunn", "Eddie Lyons" }), 1924);
+    protected static Movie dumbWaiter3 = new("The Dumb Waiter", new Iterator<string>(new[] { "Boris Komnenic", "Dragon Petrovic-Pele" }), 1999);
 
 
     protected static string FormatMovie(Movie movie)
@@ -28,7 +31,7 @@ public class Example
             star = stars.Current;
         }
 
-        return formatted.Append(", and ").Append(star).ToString();
+        return formatted.Append(" and ").Append(star).ToString();
     }
 
     public static void Run()
@@ -39,5 +42,8 @@ public class Example
         Console.WriteLine(FormatMovie(dumbWaiter));
         Console.WriteLine(FormatMovie(eraserHead));
         Console.WriteLine(FormatMovie(piTheMovie));
+        Console.WriteLine(FormatMovie(dumbWaiter1));
+        Console.WriteLine(FormatMovie(dumbWaiter2));
+        Console.WriteLine(FormatMovie(dumbWaiter3));
     }
 }

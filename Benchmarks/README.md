@@ -10,3 +10,5 @@ From the Benchmarks project directory
 > dotnet build -c Release
 
 > dotnet .\bin\Release\net7.0\Benchmarks.dll
+
+![benchamark results](../images/benchmarks.png)

@@ -6,18 +6,18 @@ using gsdc.examples.design_patterns.benchmarks;
 public class Benchmark
 {
     [Benchmark]
-    public void ImplementationBenchmark() 
-        => Implementation.RunBenchmark();
+    public void Implementation() 
+        => ImplementationBenchmark.RunBenchmark();
 
     [Benchmark]
-    public void DotNetBenchmark() 
-        => DotNet.RunBenchmark();
+    public void DotNet() 
+        => DotNetBenchmark.RunBenchmark();
 
     [Benchmark]
-    public void PatternMatchingBenchmark() 
-        => PatternMatching.RunBenchmark();
+    public void PatternMatching() 
+        => PatternMatchingBenchmark.RunBenchmark();
 
     [Benchmark]
-    public void SortingBenchmark() 
-        => Sorting.RunBenchmark();
+    public void Sorting() 
+        => SortingBenchmark.RunBenchmark();
 }
