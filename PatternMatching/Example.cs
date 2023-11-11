@@ -10,9 +10,6 @@ public class Example
         new("The Dumb Waiter", new[] { "Geraldine Jones" }, 1979),
         new("Eraser Head", new[] { "Jack Nance", "Charlotte Stewart", "Allen Joseph" }, 1977),
         new("Pi", new[] { "Sean Gullette", "Mark Margolis", "Ben Shenkman" }, 1998),
-        new("The Dumb Waiter", new[] { "Geraldine Jones", "John White" }, 1979),
-        new("The Dumb Waiter", new[] { "Bobby Dunn", "Eddie Lyons" }, 1924),
-        new("The Dumb Waiter", new[] { "Boris Komnenic", "Dragon Petrovic-Pele" }, 1999),
     };
 
     protected static string FormatMovie(Movie movie) => movie.Stars switch
