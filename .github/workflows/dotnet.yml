@@ -23,11 +23,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore -c Debug
+      run: dotnet build Benchmarks --no-restore -c Debug
     - name: Run
       run: dotnet ./Benchmarks/bin/Debug/net7.0/Benchmarks.dll
     - name: Build for Benchmarks
-      run: dotnet build --no-restore -c Release
+      run: dotnet build Benchmarks --no-restore -c Release
     - name: Run Benchmarks
       run: dotnet ./Benchmarks/bin/Release/net7.0/Benchmarks.dll
     #- name: Test
