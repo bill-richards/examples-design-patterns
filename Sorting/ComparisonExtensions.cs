@@ -1,4 +1,4 @@
-﻿namespace gsdc.examples.design_patterns.sorting;
+﻿namespace gsdc.examples.design_patterns;
 
 public static class ComparisonExtensions
 {

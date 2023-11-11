@@ -2,9 +2,9 @@
 
 public class Example
 {
-    record Movie(string Title, string[] Stars, uint Year);
-        
-    static IEnumerable<Movie> movies = new[] 
+    protected record Movie(string Title, string[] Stars, uint Year);
+
+    protected static IEnumerable<Movie> movies = new[] 
     {
         new Movie("White Noise", Array.Empty<string>(), 2023),
         new Movie("The Dumb Waiter", new[] { "Geraldine Jones" }, 1979),
@@ -15,7 +15,7 @@ public class Example
         new Movie("The Dumb Waiter", new[] { "Bobby Dunn", "Eddie Lyons" }, 1924),
     };
 
-    static string FormatMovie(Movie movie) => movie.Stars switch                                
+    protected static string FormatMovie(Movie movie) => movie.Stars switch                                
     {
         [] => $"\t{movie.Title,-16}({movie.Year})",
         [string star] => $"\t{movie.Title,-16}({movie.Year}) starring {star}",
@@ -32,13 +32,5 @@ public class Example
 
         Console.WriteLine("Sorting");
         foreach (var m in sortedMovies) Console.WriteLine(FormatMovie(m));   // Iterator
-        Console.WriteLine();
-    }
-    public static void Benchmark()
-    {
-        var sortedMovies = movies.OrderBy(movie => movie.Title).ThenByDescending(movie => movie.Year)
-                                 .ThenBy(movie => movie.Stars, ComparisonExtensions.AlphabeticComparer<string>());     
-
-        foreach (var m in sortedMovies) _ = FormatMovie(m);   
     }
 }

@@ -1,30 +1,42 @@
-﻿using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Order;
+﻿namespace gsdc.examples.design_patterns.benchmarks;
 
-[MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest), RankColumn]
-public class Benchmarks
+internal class DotNet : dotnet_iterator.Example
 {
-    [Benchmark]
-    public void Implementation()
+    public static void RunBenchmark()
     {
-        gsdc.examples.design_patterns.iterator_implementation.Example.Benchmark();
+        _ = FormatMovie(whiteNoise);
+        _ = FormatMovie(dumbWaiter);
+        _ = FormatMovie(eraserHead);
+        _ = FormatMovie(piTheMovie);
     }
+}
 
-    [Benchmark]
-    public void DotNet()
+internal class Implementation : iterator_implementation.Example
+{
+    public static void RunBenchmark()
     {
-        gsdc.examples.design_patterns.dotnet_iterator.Example.Benchmark();
+        _ = FormatMovie(whiteNoise);
+        _ = FormatMovie(dumbWaiter);
+        _ = FormatMovie(eraserHead);
+        _ = FormatMovie(piTheMovie);
     }
+}
 
-    [Benchmark]
-    public void PatternMatching()
+internal class PatternMatching : pattern_matching.Example
+{
+    public static void RunBenchmark()
     {
-        gsdc.examples.design_patterns.pattern_matching.Example.Benchmark();
+        foreach (var m in movies) _ = FormatMovie(m);
     }
+}
 
-    [Benchmark]
-    public void Sorting()
+internal class Sorting : sorting.Example
+{
+    public static void RunBenchmark()
     {
-        gsdc.examples.design_patterns.sorting.Example.Benchmark();
+        var sortedMovies = movies.OrderBy(movie => movie.Title).ThenByDescending(movie => movie.Year)
+                                 .ThenBy(movie => movie.Stars, ComparisonExtensions.AlphabeticComparer<string>());
+
+        foreach (var m in sortedMovies) _ = FormatMovie(m);
     }
 }
