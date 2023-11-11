@@ -18,7 +18,7 @@ public class Iterator<TContent> : IIterator<TContent>
     public Iterator(TContent[] range)
     {
         _content = range;
-        _maxIndex = _content is null ? 0 : _content.Length + _index;
+        _maxIndex = _content is null ? -1 : _content.Length + _index;
     }
 
     public TContent Current => _content![_index];
