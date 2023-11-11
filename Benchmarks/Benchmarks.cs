@@ -8,7 +8,13 @@ internal class DotNetBenchmark : dotnet_iterator.Example
         _ = FormatMovie(dumbWaiter);
         _ = FormatMovie(eraserHead);
         _ = FormatMovie(piTheMovie);
+        _ = FormatMovie(dumbWaiter1);
+        _ = FormatMovie(dumbWaiter2);
+        _ = FormatMovie(dumbWaiter3);
     }
+
+    public static void RunSingleMovieBenchmark()
+        => _ = FormatMovie(dumbWaiter3);
 }
 
 internal class ImplementationBenchmark : iterator_implementation.Example
@@ -19,7 +25,13 @@ internal class ImplementationBenchmark : iterator_implementation.Example
         _ = FormatMovie(dumbWaiter);
         _ = FormatMovie(eraserHead);
         _ = FormatMovie(piTheMovie);
+        _ = FormatMovie(dumbWaiter1);
+        _ = FormatMovie(dumbWaiter2);
+        _ = FormatMovie(dumbWaiter3);
     }
+
+    public static void RunSingleMovieBenchmark() 
+        => _ = FormatMovie(dumbWaiter3);
 }
 
 internal class PatternMatchingBenchmark : pattern_matching.Example
