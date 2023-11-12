@@ -14,6 +14,6 @@ I have indicated within the code where each pattern is used
 
 ![Multiple design Patterns within a few lines of code](../images/multiple-patterns.png)
 
-The use of the `Adapter Pattern` might not be immediately obvious, so it's probably worth my while pointing out that I have provided a couple of extension methods to provide *alphabetical sorting*
+The use of the `Adapter Pattern` might not be immediately obvious, so it's probably worth my while pointing out that I have provided a couple of extension methods to provide *alphabetical sorting*, and these are an instance of an `Adapter`
 
 ![IComparer implementation](../images/comparer.png)
