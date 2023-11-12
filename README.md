@@ -4,11 +4,9 @@
 #### The Company: Some Company that produces Software
 #### Required Experience
 Must have:
-
 - Design Patterns
 
 ## A foreword
-
 Early in 2023 an extremely influential academic died. 
 
 Generally speaking, academics are only extremely influential within their primary knowledge domain: this one however, was influential within his knowledge domain, and then again within ours. [*Christopher Alexander*](https://en.wikipedia.org/wiki/Christopher_Alexander) was his name: born in Vienna, Austria, educated (though not exclusively) at Harvard, USA, he lectured and held a professorship at the University of California, Berkeley, USA and died aged 85 in Binsted, UK. 
@@ -47,11 +45,11 @@ Jump right in to the code or take a bit of time to read the accompanying documen
 - [Benchmarks](./Benchmarks/README.md)
 
   Just to satisfy curiosity, I have put together a means of obtaining some Benchmarks detailing both speed and Heap allocated memory.
-#### Implementations
+#### Examples
 - [The Iterator Pattern](./IteratorImplementation/README.md)
   - [.net Iterator](./DotNetIterator/README.md)
   - [Pattern matching Iterator](./PatternMatching/README.md)
-- [Chain of Responsibility, Iterator, Decorator, Adapter](./Sorting/README.md)
+- [Unwitting pattern usage](./Sorting/README.md)
   
   This project demonstrates how a devloper/engineer can unwittingly make use of several design patterns whilst being blissfully unaware.
 - [Dependency Injection](./DependencyInjection/README.md)
