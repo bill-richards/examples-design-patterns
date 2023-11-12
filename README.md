@@ -35,24 +35,27 @@ Controversially, I am going to say *no, you do not necessarily need to know how 
 
 Knowing how to implement many of those documented design patterns is nowhere near as essential today as it was in 1994, and some might even argue that knowing *where* to apply them is nowehere near as essential today as it was in 1994 -which is not, however, a view held by this author.
 
-So *why*, I hear you ask, *is knowing **how** to implement these patterns not as important today as it was in 1994?* And in answer to that, I present to you, the contents of [this git repository](https://github.com/bill-richards/examples-design-patterns).
+So *why*, I hear you ask, *is knowing **how** to implement these patterns not as important today as it was in 1994?* And in answer to that, I present to you, the contents of [this repository](https://github.com/bill-richards/examples-design-patterns).
 
 Jump right in to the code or take a bit of time to read the accompanying documents that I have painstakingly taken the time to put together by way of describing what is laid out within this C# solution.
 
 ### The projects
-This project will run all example projects sequentially
+#### Runners
 - [Examples Runner / Viewer](./Viewer/README.md)
 
-These projects are concerned with the `Iterator Pattern`
-- [Home-baked Iterator](./IteratorImplementation/README.md)
-- [.net Iterator](./DotNetIterator/README.md)
-- [Pattern matching Iterator](./PatternMatching/README.md)
+  This project will run all example projects sequentially
+- [Benchmarks](./Benchmarks/README.md)
 
-These projects are concerned other patterns
+  Just to satisfy curiosity, I have put together a means of obtaining some Benchmarks detailing both speed and Heap allocated memory.
+#### Implementations
+- [The Iterator Pattern](./IteratorImplementation/README.md)
+  - [.net Iterator](./DotNetIterator/README.md)
+  - [Pattern matching Iterator](./PatternMatching/README.md)
+- [Chain of Responsibility, Iterator, Decorator, Adapter](./Sorting/README.md)
+  
+  This project demonstrates how a devloper/engineer can unwittingly make use of several design patterns whilst being blissfully unaware.
 - [Dependency Injection](./DependencyInjection/README.md)
 
-This project demonstrates how a devloper/engineer can unwittingly make use of several design patterns whilst being blissfully unaware.
-- [Chain of Responsibility, Iterator, Decorator, Adapter](./Sorting/README.md)
+  Not from _The Gang of Four_
 
-And just for the fun of it, I have also put together a means of obtaining some Benchmarks detailing both speed and Heap allocated memory.
-- [Benchmarks](./Benchmarks/README.md)
+

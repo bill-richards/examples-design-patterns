@@ -5,35 +5,19 @@ if (args.Length > 0)
     {
         switch (arg)
         {
-            case "impl":
-            case "Impl":
-            case "Implementation":
-            case "implementation":
+            case "iterator":
                 gsdc.examples.design_patterns.iterator_implementation.Example.Run();
                 break;
-            case "Dotnet":
-            case "dotnet":
-            case "dotNet":
-            case "DotNet":
+            case ".net-iterator":
                 gsdc.examples.design_patterns.dotnet_iterator.Example.Run();
                 break;
-            case "pattern":
-            case "Pattern":
-            case "Pattern-Matching":
-            case "Pattern-matching":
-            case "pattern-matching":
-            case "pattern-Matching":
+            case "pattern-match":
                 gsdc.examples.design_patterns.pattern_matching.Example.Run();
                 break;
-            case "sort":
-            case "Sort":
-            case "sorting":
-            case "Sorting":
+            case "multiple-patterns":
                 gsdc.examples.design_patterns.sorting.Example.Run();
                 break;
             case "di":
-            case "Di":
-            case "DI":
                 gsdc.examples.design_patterns.dependency_injection.Example.Run();
                 break;
         }
