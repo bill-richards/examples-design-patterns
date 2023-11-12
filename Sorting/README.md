@@ -10,5 +10,7 @@ As you can see from the image below, these six lines of code (which could "techn
 3. Decorator, and
 4. Chain of Responsibility
 
+I have indicated within the code where eachpattern is used
+
 ![Multiple design Patterns within a few lines of code](../images/multiple-patterns.png)
 
