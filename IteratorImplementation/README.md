@@ -10,7 +10,7 @@ public interface IIterator<TContent>
     void Reset();
 }
 ```
-You might recognize this interface, after all it is pretty much what the .net BCL provides with `IEnumerator`: so why then, would we want to roll out our own? (I'll get to that later).
+You might recognize this interface, after all it is pretty much what the .net BCL provides with `IEnumerator`: so why then, would we want to roll out our own? (I'll discuss that later in the [Benchmarks](../Benchmarks/README.md) project).
 
 It is not essential to provide an interface when implementing the Iterator pattern.
 
