@@ -12,6 +12,8 @@ This project enables you to run all of the example projects from a single locati
 > dotnet .\Viewer\bin\Release\net7.0\Viewer.dll [option [option [option [...]]]]
 #### From the Viewer project directory
 > dotnet .\bin\Release\net7.0\Viewer.dll [option [option [option [...]]]]
+#### Example
+> dotnet .\Viewer\bin\Release\net7.0\Viewer.dll iterator pattern-match .net-iterator
 #### Options
 - iterator
 
@@ -28,6 +30,3 @@ This project enables you to run all of the example projects from a single locati
 - di
 
   Run the [Dependency Injection](../DependencyInjection/README.md) example project
-
-#### Example
-> dotnet .\Viewer\bin\Release\net7.0\Viewer.dll iterator pattern-match .net-iterator
