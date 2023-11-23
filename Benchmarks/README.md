@@ -1,4 +1,4 @@
-[« back](../README.md#do-you-need-to-know-how-to-implement-design-patterns) | [solution](./)
+[« back](../README.md#do-you-need-to-know-how-to-implement-design-patterns) | [next](../IteratorImplementation/README.md) | [solution](./)
 # Benchmarks 
 Although the purpose of these examples is not to compare execution speeds, I thought it might be interesting to see how everything stacks up, just to satisfy curiosity.
 

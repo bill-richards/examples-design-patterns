@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DependencyInjection\DependencyInjection.csproj" />
     <ProjectReference Include="..\DotNetIterator\DotNetIterator.csproj" />
     <ProjectReference Include="..\IteratorImplementation\IteratorImplementation.csproj" />
     <ProjectReference Include="..\PatternMatching\PatternMatching.csproj" />

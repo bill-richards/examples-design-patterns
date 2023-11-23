@@ -1,4 +1,4 @@
-[« back](../README.md#do-you-need-to-know-how-to-implement-design-patterns) | [solution](./)
+[« back](../README.md#do-you-need-to-know-how-to-implement-design-patterns) | [next](../Benchmarks/README.md) | [solution](./)
 # Examples Runner
 This project enables you to run all of the example projects from a single location. You can run all examples by omitting any options; you can run a single example by specifying a single option; or you can run multiple examples by specifying multiple options.
 
@@ -27,6 +27,3 @@ This project enables you to run all of the example projects from a single locati
 - multiple-patterns
 
   Run the project which demonstrates the inclusion of [multiple patterns](../Sorting/README.md)
-- di
-
-  Run the [Dependency Injection](../DependencyInjection/README.md) example project

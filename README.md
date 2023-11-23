@@ -52,8 +52,5 @@ Jump right in to the code or take a bit of time to read the accompanying documen
 - [Unwitting pattern usage](./Sorting/README.md)
   
   This project demonstrates how a devloper/engineer can unwittingly make use of several design patterns whilst being blissfully unaware.
-- [Dependency Injection](./DependencyInjection/README.md)
-
-  Not from _The Gang of Four_
 
 

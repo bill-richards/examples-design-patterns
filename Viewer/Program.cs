@@ -17,9 +17,6 @@ if (args.Length > 0)
             case "multiple-patterns":
                 gsdc.examples.design_patterns.sorting.Example.Run();
                 break;
-            case "di":
-                gsdc.examples.design_patterns.dependency_injection.Example.Run();
-                break;
         }
     }
 
@@ -31,4 +28,3 @@ gsdc.examples.design_patterns.iterator_implementation.Example.Run();
 gsdc.examples.design_patterns.dotnet_iterator.Example.Run();
 gsdc.examples.design_patterns.pattern_matching.Example.Run();
 gsdc.examples.design_patterns.sorting.Example.Run();
-gsdc.examples.design_patterns.dependency_injection.Example.Run();
