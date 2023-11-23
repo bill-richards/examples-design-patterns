@@ -1,6 +1,3 @@
-﻿using System.Diagnostics;
+﻿using BenchmarkDotNet.Running;
 
-if (Debugger.IsAttached)
-    Runner.Run();
-else
-    Runner.Benchmark();
+BenchmarkRunner.Run<Benchmark>();

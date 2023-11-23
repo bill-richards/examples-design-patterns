@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorImplementation", "IteratorImplementation\IteratorImplementation.csproj", "{EFDF5759-7709-4698-950D-26100A7C4D04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorImplementation", "IteratorImplementation\IteratorImplementation.csproj", "{EFDF5759-7709-4698-950D-26100A7C4D04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetIterator", "DotNetIterator\DotNetIterator.csproj", "{8B83AF44-43C2-4F7D-AE01-74F59E4A2E2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetIterator", "DotNetIterator\DotNetIterator.csproj", "{8B83AF44-43C2-4F7D-AE01-74F59E4A2E2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternMatching", "PatternMatching\PatternMatching.csproj", "{BAE3F252-9A63-4A71-A20D-2D4946FEF96C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternMatching", "PatternMatching\PatternMatching.csproj", "{BAE3F252-9A63-4A71-A20D-2D4946FEF96C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{3EAA3C40-365C-4BF0-89F7-01A9A7A358C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting", "Sorting\Sorting.csproj", "{3EAA3C40-365C-4BF0-89F7-01A9A7A358C8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarks", "Benchmarks\Benchmarks.csproj", "{671CF518-0ADF-4DA8-8CCF-F73AEB5F2AE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Viewer", "Viewer\Viewer.csproj", "{8222B0E4-9A20-4862-8D2A-60E0AD10FBE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{671CF518-0ADF-4DA8-8CCF-F73AEB5F2AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{671CF518-0ADF-4DA8-8CCF-F73AEB5F2AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{671CF518-0ADF-4DA8-8CCF-F73AEB5F2AE7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF1D34EB-D3A4-4D66-9B71-C2E7BB688038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8222B0E4-9A20-4862-8D2A-60E0AD10FBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8222B0E4-9A20-4862-8D2A-60E0AD10FBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8222B0E4-9A20-4862-8D2A-60E0AD10FBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8222B0E4-9A20-4862-8D2A-60E0AD10FBE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,17 +2,19 @@
 
 public class Example
 {
-    record Movie(string Title, string[] Stars, uint Year);
+    protected record Movie(string Title, string[] Stars, uint Year);
 
-    static IEnumerable<Movie> movies = new[]
+    protected static Movie eraserHead = new("Eraser Head", new[] { "Jack Nance", "Charlotte Stewart", "Allen Joseph" }, 1977);
+
+    protected static IEnumerable<Movie> movies = new Movie[]
     {
-        new Movie("White Noise", Array.Empty<string>(), 2023),
-        new Movie("The Dumb Waiter", new[] { "Geraldine Jones" }, 1979),
-        new Movie("Eraser Head", new[] { "Jack Nance", "Charlotte Stewart", "Allen Joseph" }, 1977),
-        new Movie("Pi", new[] { "Sean Gullette", "Mark Margolis", "Ben Shenkman" }, 1998),
+        new("White Noise", Array.Empty<string>(), 2023),
+        new("The Dumb Waiter", new[] { "Geraldine Jones" }, 1979),
+        eraserHead,
+        new("Pi", new[] { "Sean Gullette", "Mark Margolis", "Ben Shenkman" }, 1998),
     };
 
-    static string FormatMovie(Movie movie) => movie.Stars switch
+    protected static string FormatMovie(Movie movie) => movie.Stars switch
     {
         [] => $"\t{movie.Title,-16}({movie.Year})",
         [string star] => $"\t{movie.Title,-16}({movie.Year}) starring {star}",
@@ -24,11 +26,6 @@ public class Example
     {
         Console.WriteLine("Pattern Matching");
         foreach (var m in movies) Console.WriteLine(FormatMovie(m));
-        Console.WriteLine();
     }
 
-    public static void Benchmark()
-    {
-        foreach (var m in movies) _ = FormatMovie(m);
-    }
 }

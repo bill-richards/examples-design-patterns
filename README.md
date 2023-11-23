@@ -1,8 +1,12 @@
 [solution](./)
 # Design Patterns in .Net 7.0
+### Job Title: Lorem ipsum
+#### The Company: Some Company that produces Software
+#### Required Experience
+Must have:
+- Design Patterns
 
 ## A foreword
-
 Early in 2023 an extremely influential academic died. 
 
 Generally speaking, academics are only extremely influential within their primary knowledge domain: this one however, was influential within his knowledge domain, and then again within ours. [*Christopher Alexander*](https://en.wikipedia.org/wiki/Christopher_Alexander) was his name: born in Vienna, Austria, educated (though not exclusively) at Harvard, USA, he lectured and held a professorship at the University of California, Berkeley, USA and died aged 85 in Binsted, UK. 
@@ -11,7 +15,7 @@ If you ask a software engineer whether they know of his name, I am pretty certai
 
 The work of Alexander *et al.* had a direct influence upon the thinking of some well known names within our field of expertise: Do you know the names *[Erich Gamma](https://en.wikipedia.org/wiki/Erich_Gamma), [Richard Helm](https://en.wikipedia.org/wiki/Richard_Helm), [Ralph Johnson](https://en.wikipedia.org/wiki/Ralph_Johnson_(computer_scientist)),* and *[John Vlissides](https://en.wikipedia.org/wiki/John_Vlissides) (also, sadly, no longer with us)*? Of course you do. Everyone in software engineering knows these names, right? Collectively they came to be known as *The Gang of Four* after their seminal work, [***Design Patterns: Elements of Reusable Object-Oriented Software***](https://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612), was published in 1994.
 
-The patterns presented in *Design Patterns: Elements of Reusable Object-Oriented Software* are usually what is being referred to when you see a job listing stating that a *"...knowledge of design patterns"* is required, though on occasion this also encompases the patterns presented by [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)) within his publication [***Patterns of Enterprise Application Architecture***](https://www.amazon.co.uk/Enterprise-Application-Architecture-Addison-Wesley-Signature/dp/0321127420)
+The patterns presented in *Design Patterns: Elements of Reusable Object-Oriented Software* are usually what is being referred to when you see that job listing stating that a *"...knowledge of design patterns"* is required, though on occasion this also encompases the patterns presented by [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)) within his publication [***Patterns of Enterprise Application Architecture***](https://www.amazon.co.uk/Enterprise-Application-Architecture-Addison-Wesley-Signature/dp/0321127420)
 
 ## Do you really need to understand Design Patterns?
 
@@ -25,20 +29,28 @@ Knowing what a tool is does not *ipso facto* directly translate to understanding
 
 ## Do you need to know how to implement Design Patterns?
 
-ontroversially, I am going to say *no, you do not necessarily need to know how to implement all of the documented design patterns* which currently reside within the public domain, especially so when using modern programming tools, languages, and Frameworks: for example .Net 7.0 
+Controversially, I am going to say *no, you do not necessarily need to know how to implement all of the documented design patterns* which currently reside within the public domain, especially so when using modern programming tools, languages, and Frameworks: for example .Net 7.0 
 
 Knowing how to implement many of those documented design patterns is nowhere near as essential today as it was in 1994, and some might even argue that knowing *where* to apply them is nowehere near as essential today as it was in 1994 -which is not, however, a view held by this author.
 
-So *why*, I hear you ask, *is knowing how to implement these patterns not as important today as it was in 1994?* And in answer to that, I present to you, the contents of [this git repository]().
+So *why*, I hear you ask, *is knowing **how** to implement these patterns not as important today as it was in 1994?* And in answer to that, I present to you, the contents of [this repository](https://github.com/bill-richards/examples-design-patterns).
 
 Jump right in to the code or take a bit of time to read the accompanying documents that I have painstakingly taken the time to put together by way of describing what is laid out within this C# solution.
 
-- [Iterator Implementation and consumer](./IteratorImplementation/README.md)
-- [.net Iterator consumer](./DotNetIterator/README.md)
-- [Pattern matching iterator consumer](./PatternMatching/README.md)
-- [Chain of Responsibility, Iterator, Decorator, Adapter](./Sorting/README.md)
-- [Dependency Injection](./DependencyInjection/README.md)
+### The projects
+#### Runners
+- [Examples Runner / Viewer](./Viewer/README.md)
 
-And just for the fun of it, I have also put together a means of both running all examples sequentially, and of obtaining some Benchmarks detailing both speed and Heap allocated memory.
+  This project will run all example projects sequentially
+- [Benchmarks](./Benchmarks/README.md)
 
-- [Benchmarks / Debug Runner](./Benchmarks/README.md)
+  Just to satisfy curiosity, I have put together a means of obtaining some Benchmarks detailing both speed and Heap allocated memory.
+#### Examples
+- [The Iterator Pattern](./IteratorImplementation/README.md)
+  - [.net Iterator](./DotNetIterator/README.md)
+  - [Pattern matching Iterator](./PatternMatching/README.md)
+- [Unwitting pattern usage](./Sorting/README.md)
+  
+  This project demonstrates how a devloper/engineer can unwittingly make use of several design patterns whilst being blissfully unaware.
+
+

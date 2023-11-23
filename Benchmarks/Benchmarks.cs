@@ -1,30 +1,51 @@
-﻿using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Order;
+﻿namespace gsdc.examples.design_patterns.benchmarks;
 
-[MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest), RankColumn]
-public class Benchmarks
+internal class DotNetBenchmark : dotnet_iterator.Example
 {
-    [Benchmark]
-    public void Implementation()
+    public static void RunBenchmark()
     {
-        gsdc.examples.design_patterns.iterator_implementation.Example.Benchmark();
+        _ = FormatMovie(whiteNoise);
+        _ = FormatMovie(dumbWaiter);
+        _ = FormatMovie(eraserHead);
+        _ = FormatMovie(piTheMovie);
     }
 
-    [Benchmark]
-    public void DotNet()
+    public static void RunSingleMovieBenchmark()
+        => _ = FormatMovie(eraserHead);
+}
+
+internal class ImplementationBenchmark : iterator_implementation.Example
+{
+    public static void RunBenchmark()
     {
-        gsdc.examples.design_patterns.dotnet_iterator.Example.Benchmark();
+        _ = FormatMovie(whiteNoise);
+        _ = FormatMovie(dumbWaiter);
+        _ = FormatMovie(eraserHead);
+        _ = FormatMovie(piTheMovie);
     }
 
-    [Benchmark]
-    public void PatternMatching()
+    public static void RunSingleMovieBenchmark() 
+        => _ = FormatMovie(eraserHead);
+}
+
+internal class PatternMatchingBenchmark : pattern_matching.Example
+{
+    public static void RunBenchmark()
     {
-        gsdc.examples.design_patterns.pattern_matching.Example.Benchmark();
+        foreach (var m in movies) _ = FormatMovie(m);
     }
 
-    [Benchmark]
-    public void Sorting()
+    public static void RunSingleMovieBenchmark()
+        => _ = FormatMovie(eraserHead);
+}
+
+internal class SortingBenchmark : sorting.Example
+{
+    public static void RunBenchmark()
     {
-        gsdc.examples.design_patterns.sorting.Example.Benchmark();
+        var sortedMovies = movies.OrderBy(movie => movie.Title).ThenByDescending(movie => movie.Year)
+                                 .ThenBy(movie => movie.Stars, ComparisonExtensions.AlphabeticComparer<string>());
+
+        foreach (var m in sortedMovies) _ = FormatMovie(m);
     }
 }
